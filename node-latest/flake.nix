@@ -16,7 +16,7 @@
     let
       overlays = [
         (self: super: rec {
-          nodejs = super.nodejs;
+          nodejs = super.nodejs-20_x;
           pnpm = super.nodePackages.pnpm;
           yarn = (super.yarn.override { inherit nodejs; });
         })
